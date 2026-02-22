@@ -277,7 +277,8 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach(img => imageObserver.observe(img));
 });
 
-// Scroll to top functionality
+// Scroll to top functionality - REMOVED to avoid conflict with WhatsApp button
+/*
 function createScrollToTopButton() {
     const scrollBtn = document.createElement('button');
     scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
@@ -335,6 +336,7 @@ function createScrollToTopButton() {
 
 // Initialize scroll to top button
 document.addEventListener('DOMContentLoaded', createScrollToTopButton);
+*/
 
 // Form field focus effects
 document.addEventListener('DOMContentLoaded', function() {
