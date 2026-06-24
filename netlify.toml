@@ -24,3 +24,10 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000"
+
+# Pasta interna (simulador) - nao indexar e nao cachear
+[[headers]]
+  for = "/interno/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
